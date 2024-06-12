@@ -11,15 +11,19 @@ service GreetService{
 }
 
 message NoParam{};
+
 message HelloRes{
     string message =1;
 };
+
 message NameList{
     repeated string names=1;
 };
+
 message HelloReq{
-    string message=1;
+    string name=1;
 };
+
 message MessageList{
     repeated string messages=1;
 };
